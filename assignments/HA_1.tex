@@ -1,0 +1,101 @@
+%% LyX 1.6.7 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[letterpaper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm,headheight=2cm,headsep=2cm,footskip=2cm}
+\usepackage{amsmath}
+\usepackage{babel}
+
+
+\newcommand{\bra}[1]{\left\langle {#1} \right|}
+\newcommand{\ket}[1]{\left|  #1 \right\rangle}
+\newcommand{\bracket}[3]{\langle {#1} | {#2} | {#3} \rangle}
+\newcommand{\braket}[2]{\langle {#1} | {#2} \rangle}
+\newcommand{\aver}[1]{\langle {#1} \rangle}
+\newcommand{\abs}[1]{\left| {#1} \right|}
+\newcommand{\raw}[0]{\rightarrow}
+
+\begin{document}
+
+\title{PHY: 524A \\
+Assignment: Statistical mechanics of photons in equilibrium}
+
+\maketitle
+%%\date{\today}
+
+\maketitle
+
+
+\section{Reading} 
+Chapter 1, Quantum theory of light, Loudon
+
+
+\section{Photons in equilibrium: Planck's black body spectrum}
+
+We will start with photons, in equilibrium with the walls of a closed cavity or black body. The photon's are in a dynamic equilibrium, being absorbed and emitted from the walls, to maintain a fixed temperature(the primary indicator of equilibrium).
+
+Calculate or comment on the following:
+
+1) Consider the walls of the cavity to be perfectly conducting, which ensures that the fields will have to vanish at the walls(remember, Griffiths, boundary conditions for electric fields at interfaces). If the cavity is said to be a cube, with each side of length L, write down an expression for the three components of the electric field that can survive in the cavity.
+Show that there are discrete number of modes in the cavity.
+
+2) Calculate the density of states, that is, count the \textit{number} of modes that exists within energies $\hbar\omega$ and 
+$\hbar(\omega+d\omega)$.
+
+3) \textit{Field Quantization}: Show that each such mode can be considered as a harmonic oscillator (Hint: Argue that the Hamiltonian for the electromagnetic field is equivalent to that of a harmonic oscillator. Such Hamiltonians are called quadratic or bilinear Hamiltonians.
+
+4) Use the quantum mechanics you learned for harmonic oscillator to write down the energies for each mode. Use the raising and lowering operators to \textit{create} and \textit{destroy} such modes(or photons).
+
+5) \textit{Thermodynamics of canonical ensembles} Use Boltzmann's distribution to write down the probability of occupation(or probability of finding photons) in any such quantized energy levels. 
+
+6) Once you have the distribution, use basic ideas of statistics to calculate and plot,
+
+a)  Mean number of photons, as a function of frequency and temperature.
+
+b) Mean energy density of radiation: this you calculate by mulitplying the energy density calculated in (2) with the average photon number of 6(a) and ofcourse, the photon energy, $\hbar\omega$.
+
+This formula is the celebrated Planck's black body spectrum.
+
+c) Show that the fluctuation of the number of photons(standard deviation) is the same as the mean(such distributions, in statistics, are known as Poissonian distributions. Photons in thermal equilibrium follow Poissonian statistics).
+
+
+\section{Fluctuations in photon number: Einstein's A and B coefficients}
+
+Once you know the probability distribution of photons with a certain energy you can calculate all statistical quantities. In 6(c) you calculated the standard deviation. What does it mean? Why are there fluctuations in the number of photons? Are they getting absorbed and emitted? Exactly! That is what is happening, and as early as 1917, Einstein, in a desperate attempt to understand fluctuation in photon numbers, introduced the concept of absorption and emission of photons by atoms.
+
+7) \textit{What is the chemical potential of photons?} Go back to the derivation of equilibrium statistics(i.e. probability distribution for energy) of bosons. Chemical potential there shows up as manifestation of a constraint(Lagrange multiplier), that the particle number is conserved. Photons can get absorbed and emitted. So photon number is not conserved. Can you match the distribution you derived in Prob.6 with that of Bosons? How do you think of zero chemical potential for an ensemble of particles in thermal equilibrium with its surrounding?
+
+8) \textit{An elementary, two-state model for atoms:} Consider a two level atom with an excited state and a ground state. The two states can exchange population at a rate that depends of the density of photons present. Write down \textit{rate equations} for the two states. Argue when such first order rate equations will yield to a \textit{steady state}, with an equilibrium distribution of photons. From such necessity for achieving thermal equilibrium, show that atoms will have to emit(that is, come down from excited state) via two distinct mechanism. Einstein called the rate of occurrence of one such mechanism A and the other B.
+
+You see the logic in the argument? The only new element here is the two-state atom. You introduce this, but still look for thermal equilibrium. However, that demands specific mechanism of absorption and emission, which turns out to be bang on target, even from a microscopic picture. That is where lies of the brilliance of Einstein: he understood statistical fluctuations really well. 
+
+\section{Microscopic theory: an elementary model of a two-state quantum system}
+
+We will take this problem as an exercise to remind ourselves of Hilbert's space, quantum states living and evolving in such states and how to visualize such evolutions in terms of \textit{populations} and \textit{coherences}.
+
+9) Consider a two-dimensional Hilbert space (with myriads of examples: a spin-half-particle, ground and excited states of an atom, two conformational states of ammonia molecule, the two circular polarizations of light etc.) with a ground state $\ket{g}$ and an excited $\ket{e}$. Consider a symmetric Hamiltonian and show that there is an oscillation of population and coherence.
+
+10) Now consider a decay from the excited state. Derive equivalent expressions for Ensitein's A and B coefficients and ponder on the non-Hermitian nature of the resulting Hamiltonian. What does it mean?
+
+\section{Lamb Shift and vacuum fluctuations}
+
+This is another spectacular manifestation of the existence of photons, or rather, existence of the well structured, nothing, or vacuum that comes along with quantized electromagnetic field. 
+
+
+\textit{The Puzzle:} From your basic quantum mechanics of Hydrogen atom, you can recollect that the states $2S_{1/2}$ and $2P_{1/2}$ should be degenerate. There is nothing in the Hamiltonian or calculated energy, that has that $l$ dependence. However, Willis Lamb's more and more careful measurement of the spectral lines showed a splitting of 1.057 GHz, a huge energy difference. Where is such a splitting coming from?
+
+Many people guessed it must be the electromagnetic vacuum, that tiny zero point energy and it's fluctuation that is causing it. It was Bethe who first proposed a concrete way to get an answer. His first step was to consider the vacuum fluctuation as some sort of perturbation that will perturb the electron path, and hence the Coulomb potential.
+
+11) \textit{Perturbation theory:} For a small, isotropic shift $\delta\vec{r}$ from the electron orbit, calculate the corresponding, average correction in the Coulomb energy $\delta V$ to the leading order. For your calculation, consider the atom to be in the hydrogenic ground state and use the corresponding wave-function.
+
+12) \textit{Source of perturbation:} Suppose the small shift is actually caused be an electromagnetic field or the vacuum field amplitude. From classical Netwon's laws, estimate the avarage value of the fluctuation.
+
+13) Use this in (11), to calculate the expected shift in energy. Discuss the limits in details.
+
+The limits and the corresponding arguments are really important and interesting: this is one way to avoid infinities in QED, first introduced by Bethe. This is one example a general class of tricks or fudging that people adopt and are magnanimously called \textit{renormalization}. Much later, Kenneth Wilson gave a solid physical fundation behind such cut-offs.
+
+The calculation you did is in the lines of the famous Bether solution of the Lamb shift, which started a whole new chapter in physics, Quantum Electro-Dynamics or QED.
+
+\end{document}
