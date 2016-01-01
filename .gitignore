@@ -1,0 +1,8 @@
+# latex logs
+*.log
+*.dvi
+*.aux
+
+# vim swaps
+*.swo
+*.swp
